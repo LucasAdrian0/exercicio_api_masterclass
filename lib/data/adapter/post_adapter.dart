@@ -1,5 +1,6 @@
 // ignore_for_file: file_names
-import 'package:exercicio_api_masterclass/model/post_model.dart';
+
+import 'package:exercicio_api_masterclass/data/model/post_model.dart';
 
 class PostAdapter {
 

@@ -1,6 +1,6 @@
-import 'package:exercicio_api_masterclass/model/post_model.dart';
-import 'package:exercicio_api_masterclass/repository/abstract_repository.dart';
-import 'package:exercicio_api_masterclass/service/abstract_service.dart';
+import 'package:exercicio_api_masterclass/data/model/post_model.dart';
+import 'package:exercicio_api_masterclass/domain/repositories/abstract_repository.dart';
+import 'package:exercicio_api_masterclass/data/service/abstract_service.dart';
 
 class PostRepositoryImpl implements AbsPostRepository {
   final AbstractService service;

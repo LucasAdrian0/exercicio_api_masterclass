@@ -1,8 +1,8 @@
-import 'package:exercicio_api_masterclass/service/abstract_service.dart';
+import 'package:exercicio_api_masterclass/data/model/post_model.dart';
+import 'package:exercicio_api_masterclass/data/service/abstract_service.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
-import 'package:exercicio_api_masterclass/model/post_model.dart';
-import 'package:exercicio_api_masterclass/repository/post_repository_impl.dart';
+import 'package:exercicio_api_masterclass/data/repository/post_repository_impl.dart';
 
 class MockPostService extends Mock implements AbstractService {}
 

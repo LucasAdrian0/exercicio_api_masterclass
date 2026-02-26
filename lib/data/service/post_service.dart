@@ -1,7 +1,7 @@
 import 'package:dio/dio.dart';
-import 'package:exercicio_api_masterclass/adapter/Post_adapter.dart';
-import 'package:exercicio_api_masterclass/model/post_model.dart';
-import 'package:exercicio_api_masterclass/service/abstract_service.dart';
+import 'package:exercicio_api_masterclass/data/adapter/Post_adapter.dart';
+import 'package:exercicio_api_masterclass/data/model/post_model.dart';
+import 'package:exercicio_api_masterclass/data/service/abstract_service.dart';
 
 class PostService implements AbstractService {
   final Dio dio;
