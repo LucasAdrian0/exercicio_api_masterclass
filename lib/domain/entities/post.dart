@@ -1,14 +1,14 @@
-class PostModel {
+class Post {
   final int id;
   final String date;
   final String slug;
   final String link;
-  final RenderedField title;
-  final RenderedField excerpt;
+  final String title;
+  final String excerpt;
   final int featuredMedia;
   final String? imageUrl;
 
-  PostModel({
+  Post({
     required this.id,
     required this.date,
     required this.slug,
@@ -18,10 +18,4 @@ class PostModel {
     required this.featuredMedia,
     this.imageUrl,
   });
-}
-
-class RenderedField {
-  final String rendered;
-
-  RenderedField({required this.rendered});
 }

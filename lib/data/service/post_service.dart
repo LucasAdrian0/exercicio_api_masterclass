@@ -27,4 +27,20 @@ class PostService implements AbstractService {
       );
     }
   }
+
+  @override
+  Future<String?> getMediaUrl(int id) async {
+    try {
+      final response = await dio.get('/wp/v2/media/$id');
+      final mediaDetails = response.data['media_details'];
+      if (mediaDetails != null &&
+          mediaDetails['sizes'] != null &&
+          mediaDetails['sizes']['medium'] != null) {
+        return mediaDetails['sizes']['medium']['source_url'];
+      }
+      return response.data['source_url'];
+    } catch (e) {
+      return null;
+    }
+  }
 }
